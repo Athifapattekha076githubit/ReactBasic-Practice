@@ -14,12 +14,18 @@
     display: flex;
     list-style-type: none;
     font-size: 24px;
+    text-decoration-line: none;
+    text-decoration-color: black;
+    /* text-decoration-line: none; */
+    /* text-decoration-color: black; */
+
 }
 .nav-items >ul >li {
     padding: 10px;
     margin: 10px;
     
 }
+
 .search{
     padding:10px;
     /* justify-content: center; */
@@ -30,6 +36,8 @@
     width: 270px;
     /* display: flex; */
     flex-wrap: wrap;
+    text-decoration: none;
+   
     /* height: 490px; */
     /* background-color: #b3b0b0; */
  

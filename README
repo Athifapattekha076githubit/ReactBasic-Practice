@@ -44,5 +44,11 @@ React Hooks
 (Normal JS utility functions)
 
 -useState() - Superpowerful State Variables in react
--useEffect()
+whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
+-useEffect()- if no dependency array => useEffect is called on every render
+if dependency array is empty = [] => useEffect called on every Initial render(just once).
+if dependency array is [btnNamereact] => called everytime btnnamereact is updated.
+# 2 types Routing in Web Apps
+Clent side Routing- first time only it load all components and it will route to clicked word Single page application(is client side routing)
+server side Routing- make network call fetch api and route the page
 
