@@ -1,33 +1,37 @@
 {
-  "name": "namaste-react",
+  "name": "reactbasic-practice",
   "version": "1.0.0",
-  "description": "\"This is react-basic by Athifa \"",
+  "description": "This is Namstey React by Athifa",
+  "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/Athifapattekha076/ReactBasic-Practice.git)"
+    "url": "git+https://github.com/Athifapattekha076githubit/ReactBasic-Practice.git"
   },
   "keywords": [
     "react",
-    "react-basic",
-    "athifa"
+    "namste",
+    "react",
+    "Athifa"
   ],
   "author": "Athifa",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Athifapattekha076githubit/ReactBasic-Practice/issues"
+  },
+  "homepage": "https://github.com/Athifapattekha076githubit/ReactBasic-Practice#readme",
   "devDependencies": {
-    "parcel": "^2.13.2",
-    "process": "^0.11.10"
+    "parcel": "^2.13.3",
+    "postcss": "^8.5.1",
+    "process": "^0.11.10",
+    "tailwind": "^4.0.0"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
-  },
-  "browserList": [
-    "last 10 versions"
-  ]
+    "@tailwindcss/postcss": "^4.0.5",
+    "react": "^19.0.0",
+    "react-router-dom": "^6.29.0",
+    "tailwindcss": "^4.0.5"
+  }
 }

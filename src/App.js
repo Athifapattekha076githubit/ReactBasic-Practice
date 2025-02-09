@@ -5,6 +5,9 @@ import Body from "./Components/Body";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Error from "./Components/Error";
+// import { BrowserRouter, Route, Link } from 'react-router-dom'; // Correct
+// import { BrowserRouter, Route, Link } from 'ReactRouterDOM'; // Incorrect
+
 import { createBrowserRouter,RouterProvider, Outlet } from "react-router-dom";
 import RestroMenu from "./Components/RestroMenu";
 // import Shimmer from "./Components/Shimmer";

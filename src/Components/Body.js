@@ -41,18 +41,18 @@ const onlineStatus = useOnlineStatus();
 
 return listOfRestaurant?.length === 0 ?(<Shimmer />) :(
     <div className="container body">
-    <div className="filter-btn">
-    <div className="search">
+    <div className="filter-btn flex flex-wrap">
+    <div className="search p-2 m-2">
     <input
+    className="border-4 border-solid border-black rounded-lg"
     type="text"
-    className="search-box"
     value={searchText}
     onChange={(e) => {
     setSearchText(e.target.value);
     }}
     />
     <button
-    className="searchBtn"
+    className="px-3 bg-blue-200 m-4 rounded-lg "
     onClick={() => {
     // filter the Restaurant and update the UI.
    
@@ -64,7 +64,7 @@ return listOfRestaurant?.length === 0 ?(<Shimmer />) :(
 
         Search</button>
         </div>
- <button
+ <button className="px-4 py-2 m-5 w-[200px] h-[40px] bg-blue-200 rounded-lg"
  onClick={() => {
  const filterLogic = listOfRestaurant.filter((res) => {
  return res.info.avgRating > 4;
@@ -75,7 +75,7 @@ return listOfRestaurant?.length === 0 ?(<Shimmer />) :(
  Top Restaurants
  </button>
  </div>
- <div className="res-container">
+ <div className=" flex flex-wrap justify-between p-2 m-3">
  {filteredRestaurant.map((restaurant) => (
  <Link 
  key={restaurant.info.id}
