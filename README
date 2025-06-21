@@ -52,3 +52,41 @@ if dependency array is [btnNamereact] => called everytime btnnamereact is update
 Clent side Routing- first time only it load all components and it will route to clicked word Single page application(is client side routing)
 server side Routing- make network call fetch api and route the page
 
+
+
+# Redux ToolKit
+-Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+-Slice(cartSlice) to add
+-dispatch(action)
+-selector
+
+
+# types of testing (developer)
+- Unit Testing
+-Integration Testing
+-End - to - End Testing - e2e testing
+
+# setting up Testing in our app
+- Install React Testing Library
+_ Install Jest
+- Installed Babel dependencies
+- Configure Babel
+- Configure Parcel config file to disable default babel transpilation
+- jest configuration
+- jest - npx jest --init
+- instal jsdom
+-- Header.test.js // Header.spec.js // Header.spect.ts
+-- Header.test.ts
+-- __add__ = dunder method 
+-- Install @babel/preset-react - to make jsx work in test cases
+-- Install @babel/preset-react inside my babel config
+-- install @testing-library/jest-dom
+
+
+
+
+
+
+

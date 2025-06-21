@@ -1,7 +1,10 @@
 import { LOGO_URL } from "../Utils/Constants";
-import {useState} from "react";
+import {useState, useContext} from "react";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+import userContext from "../Utils/userContext";
+import { useSelector } from "react-redux";
+
 const Header = () => {
 
 
@@ -10,6 +13,15 @@ console.log("Header render");
 
 const onlineStatus = useOnlineStatus();
 
+const {loggedInUser} = useContext(userContext)
+console.log(loggedInUser);
+
+
+// selector is hook in react(normal js function)
+// Subscribing to the store using selector
+
+
+const cartItems = useSelector((store) => store.cart.items);
 
 
     return (
@@ -33,11 +45,13 @@ const onlineStatus = useOnlineStatus();
                         <li className="px-4">
                         <Link to="/Grocery">Grocery</Link>
                         </li>
-                    <li className="px-4">Cart</li>
+                    <li className="px-4 font-bold">
+                        <Link to="/Cart">Cart - ({cartItems.length} items)</Link></li>
                     <button className="px-4" onClick={()=>{
                         btnNameReact === "Login" ? 
                        setBtnNameReact("Logout") : setBtnNameReact("Login");
                     }}>{btnNameReact}</button>
+                     <li className="px-4 font-bold">{loggedInUser}</li>
                 </ul>
             </div>
         </div>
